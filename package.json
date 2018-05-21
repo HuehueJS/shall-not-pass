@@ -1,0 +1,9 @@
+{
+  "name": "shall-not-pass",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "git@github.com:HuehueJS/shall-not-pass.git",
+  "author": "HuehueJs",
+  "license": "BSD",
+  "private": false
+}
