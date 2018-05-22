@@ -7,7 +7,9 @@ import { expect } from 'chai';
 describe("#obj", () => {
     it("build",()=>{
         it('should return true when it is ok',()=>{
-            const validator = build({'name':pipe(startsWith('123'),endsWith('456')),'age':pipe(startsWith('1'))});
+            const nameValidator = pipe(startsWith('123'),endsWith('456'));
+            const ageValidator = startsWith('1');
+            const validator = build({'name':nameValidator,'age':ageValidator});
             expect(validator({'name':'123456','age':'111'}),true);
         })
     })
